@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JaredShop - Venta de Camisas</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #1a252f;
+            color: #ffffff;
+            padding: 25px 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 2px;
+        }
+
+        p.slogan {
+            font-style: italic;
+            margin-top: 5px;
+            color: #00d1b2;
+            font-size: 1.1em;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Galería / Catálogo de Productos */
+        .catalogo {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .producto {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 15px;
+            max-width: 350px;
+            width: 100%;
+            transition: transform 0.2s ease;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .producto h3 {
+            margin: 15px 0 8px 0;
+            color: #1a252f;
+        }
+
+        .precio {
+            font-size: 1.3em;
+            color: #00d1b2;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        /* Información de Compra */
+        .info {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+
+        .info h2 {
+            color: #1a252f;
+            margin-top: 0;
+        }
+
+        .btn-contacto {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #1a252f;
+            color: #bdc3c7;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>JaredShop</h1>
+        <p class="slogan">Estilo, comodidad y tendencia en cada camisa</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Catálogo de 2 imágenes -->
+        <section class="catalogo">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=600&q=80" alt="Camisa Casual Manga Larga">
+                <h3>Camisa Casual Manga Larga</h3>
+                <p class="precio">$399 MXN</p>
+                <p>100% algodón, ideal para cualquier ocasión informal o semi-formal.</p>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80" alt="Camisa Estampada de Verano">
+                <h3>Camisa Estampada de Verano</h3>
+                <p class="precio">$349 MXN</p>
+                <p>Diseño fresco y ligero, perfecta para el uso diario o fines de semana.</p>
+            </div>
+        </section>
+
+        <!-- Información de Pedidos -->
+        <section class="info">
+            <h2>¿Cómo hacer tu pedido?</h2>
+            <p>Hacemos envíos a todo el país y entregas personales. Escríbenos para consultar tallas disponibles y métodos de pago.</p>
+            <a href="https://wa.me/1234567890" target="_blank" class="btn-contacto">📲 Ordenar por WhatsApp</a>
+        </section>
+
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 JaredShop - Todos los derechos reservados.</p>
+        <p>📍 Envíos a todo México | 📩 Contacto: ventas@jaredshop.com</p>
+    </footer>
+
+</body>
+</html>
